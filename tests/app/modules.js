@@ -6,6 +6,10 @@ define([
   'app/modules'
 ], function(answers) {
   describe('the module pattern', function() {
+    //////////
+    // TODO //
+    //////////
+    // learn modules
     it('you should be able to create a function that returns a module', function() {
       var module = answers.createModule('hello', 'matt');
 

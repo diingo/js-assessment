@@ -24,7 +24,10 @@ define([
       expect(result).to.eql('Hello, Ellie!');
       expect(sayItCalled).to.be.ok;
     });
-
+    //////////
+    // TODO //
+    //////////
+    // why does my answer work?
     it('you should be able to change the context in which a function is called', function() {
       var speak = function() {
             return sayIt(this.greeting, this.name, '!!!');
@@ -38,7 +41,10 @@ define([
       expect(result).to.eql('Hello, Rebecca!!!');
       expect(sayItCalled).to.be.ok;
     });
-
+    //////////
+    // TODO //
+    //////////
+    // did this work because I created a closure?
     it('you should be able to return a function from a function', function() {
       expect(answers.functionFunction('Hello')('world')).to.eql('Hello, world');
       expect(answers.functionFunction('Hai')('can i haz funxtion?')).to.eql('Hai, can i haz funxtion?');

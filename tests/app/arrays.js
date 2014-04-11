@@ -92,6 +92,10 @@ define([
       expect(result).to.eql(4);
     });
 
+    //////////
+    // TODO //
+    //////////
+    // Don't think I did this a good way.
     it('you should be able to find duplicates in an array', function() {
       var result = answers.duplicates([ 1, 2, 4, 4, 3, 3, 1, 5, 3 ]);
 
@@ -106,6 +110,9 @@ define([
       expect(result.join(' ')).to.eql('1 4 9 16');
     });
 
+    //////////
+    // TODO //
+    //////////
     it('you should be able to find all occurrences of an item in an array', function() {
       var result = answers.findAllOccurrences('abcdefabc'.split(''), 'a');
 

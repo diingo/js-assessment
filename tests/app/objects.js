@@ -29,11 +29,18 @@ define([
       };
     });
 
+    //////////
+    // TODO //
+    //////////
+    // what does it mean by define a function for fn?
     it('you should be able to alter the context in which a method runs', function() {
       // define a function for fn so that the following will pass
       expect(answers.alterContext(a.sayIt, b)).to.eql('Yo, Rebecca!');
     });
 
+    //////////
+    // TODO //
+    //////////
     it('you should be able to alter multiple objects at once', function() {
       // define a function for fn so that the following will pass
       var obj1 = new C('Rebecca'),
@@ -46,7 +53,9 @@ define([
       expect(obj2.greeting).to.eql(greeting);
       expect(new C('Ellie').greeting).to.eql(greeting);
     });
-
+    //////////
+    // TODO //
+    //////////
     it('you should be able to iterate over an object\'s "own" properties', function() {
       // define a function for fn so that the following will pass
       var C = function() {
