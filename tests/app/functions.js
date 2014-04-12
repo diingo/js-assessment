@@ -56,7 +56,7 @@ define([
 
       var funcs = answers.makeClosures(arr, square);
       expect(funcs).to.have.length(arr.length);
-
+      // debugger;
       for (var i = 0; i < arr.length; i++) {
         expect(funcs[i]()).to.eql(square(arr[i]));
       }
